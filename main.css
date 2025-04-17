@@ -1,0 +1,849 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+    background-color: #FFFFFF;
+    color: #0F0101;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.container {
+    max-width: 1125px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+section {
+    max-width: 1600px;
+    margin: 0 auto;
+    /* display: flex;
+    align-items: center; */
+    /* margin-bottom: 100px; */
+}
+
+.header {
+    background-color: hwb(340 81% 5% / 0.3);
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 4;
+}
+
+.header__container {
+    max-width: 1125px;
+    width: 100%;
+    height: 79px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.header__logo {
+    flex-shrink: 0;
+}
+
+
+.header__logo-image {
+    height: 79px;
+    width: 79px;
+}
+
+.header__nav {
+    flex: 1 1 auto;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header__nav-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    margin: 0;
+    padding: 0;
+}
+
+.header__nav-link {
+    font-size: 15px;
+    color: #150101;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 0;
+    opacity: 0.6;
+    padding: 20px 0;
+}
+
+.header__nav-link--active,
+.header__nav-link:hover {
+    color: #D23166;
+}
+
+.header__action {
+    flex-shrink: 0;
+    margin-left: 172px;
+}
+
+.header__btn,
+.hero__btn,
+.product__btn,
+.product-item__btn,
+.contact-help__btn,
+.footer__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 165px;
+    height: 49px;
+    background-color: #D23166;
+    color: #FAFAFA;
+    font-family: 'Hind Madurai', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1;
+    letter-spacing: 0;
+    border: none;
+    border-radius: 5px;
+}
+
+/* .header__btn:hover {} */
+.hero {
+    background-color: hwb(340 81% 5% / 0.3);
+}
+
+.hero .container {
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 0;
+}
+
+.hero__content {
+    max-width: 665px;
+}
+
+.hero__label {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 10%;
+    margin-bottom: 6px;
+}
+
+.hero__title {
+    font-family: Fredoka One, sans-serif;
+    font-weight: 400;
+    font-size: 57.33px;
+    line-height: 121%;
+    letter-spacing: 0%;
+    margin-bottom: 35px;
+}
+
+.hero__highlight {
+    color: #D23166;
+}
+
+.hero__desc,
+.product__desc {
+    width: 526px;
+    font-family: 'Hind Madurai', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: 0%;
+    opacity: 0.6;
+    margin-bottom: 50px;
+}
+
+/* .hero__btn {} */
+
+.hero__image {
+    position: relative;
+    width: 597px;
+    height: 597px;
+    flex-shrink: 0;
+}
+
+.hero_img {
+    width: auto;
+    height: auto;
+    pointer-events: none;
+}
+
+.hero_img--bg,
+.hero_img--bg-shadow {
+    z-index: 1;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translateX(33%);
+    width: auto;
+    height: auto;
+}
+
+.hero_img--main {
+    position: absolute;
+    top: -65px;
+    left: 0;
+    z-index: 2;
+}
+
+.hero_img--splash {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    transform: translate(-20%, 10%) rotate(-4.79deg);
+}
+
+.hero_img--bg-shadow {
+    transform: translate(75%, 85%);
+}
+
+.features {
+    padding: 100px 0;
+    margin-bottom: 0;
+}
+
+.features .container {
+    padding: 0;
+}
+
+.features__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 39px;
+}
+
+.features__item {
+    flex: 1;
+    text-align: center;
+    width: 250px;
+    padding: 0 10px;
+    border: 1px solid #00000008;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.03);
+    padding: 33px 26px;
+}
+
+.features__icon {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 36px;
+}
+
+.features__title {
+    font-family: 'Hind Madurai', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    margin-bottom: 9px;
+}
+
+.features__desc {
+    font-family: Hind Madurai;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+    opacity: 0.6;
+}
+
+.product {
+    background-color: hwb(340 81% 5% / 0.3);
+}
+
+.product__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* .product__content {} */
+
+.product__title,
+.product-nav__title,
+.product-item__title {
+    font-family: Hind Madurai;
+    font-weight: 600;
+    font-size: 44.2px;
+    line-height: 111.00000000000001%;
+    letter-spacing: 0%;
+    margin-bottom: 16px;
+}
+
+.product__desc,
+.product-item__desc {
+    font-size: 16px;
+    color: #4C4C4C;
+    opacity: 0.8;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    width: 442px;
+}
+
+.product__image {
+    position: relative;
+}
+
+/* .product__img {} */
+
+.product_img--bg-shadow {
+    position: absolute;
+    bottom: 75px;
+    left: 215px;
+}
+
+.product-nav {
+    margin-top: 137px;
+    margin-bottom: 149px;
+}
+
+.product-nav__title {
+    text-align: center;
+    margin-bottom: 64px;
+}
+
+.product-nav__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 0;
+    margin: 0 0 50px;
+    list-style: none;
+}
+
+.product-nav__item {
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #000000;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+
+.product-nav__item:hover {
+    color: #D64374;
+}
+
+/* .product-nav__item--active {} */
+
+.product-nav__item--active::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #D64374;
+    margin-top: 5px;
+}
+
+.product-list__items {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 112px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.product-item {
+    display: flex;
+    align-items: center;
+    gap: 85px;
+}
+
+.product-item--reverse {
+    flex-direction: row-reverse;
+}
+
+.product-item__img {
+    width: 580px;
+}
+
+.product-item__img img {
+    max-width: 100%;
+    display: block;
+}
+
+.product-item__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 454px;
+}
+
+.product-item__content--reverse {
+    align-items: flex-end;
+}
+
+.product-item__title {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 11px;
+}
+
+.product-item__desc {
+    opacity: 0.7;
+    text-align: start;
+    margin-bottom: 28px;
+}
+
+.product-item__desc--reverse {
+    text-align: end;
+}
+
+.product-item__price {
+    font-family: Hind Madurai;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #000000;
+    margin-bottom: 16px;
+}
+
+.product-item__price-old {
+    font-size: 20px;
+    line-height: 100%;
+    text-decoration: line-through;
+    opacity: 0.7;
+    margin-right: 5px;
+}
+
+.reviews {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+.reviews__content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 46px;
+}
+
+.reviews__user {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.reviews__avatar {
+    width: 59px;
+    height: 58px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.reviews__info {
+    text-align: start;
+}
+
+.reviews__name {
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #000000;
+    margin-bottom: 5px;
+}
+
+.reviews__role {
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #000000;
+    opacity: 0.7;
+}
+
+.reviews__quote {
+    padding-left: 23.4px;
+    position: relative;
+    max-width: 350px;
+}
+
+.reviews__quote-text {
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    color: #000000;
+    opacity: 0.7;
+    text-align: start;
+    max-width: 322px;
+}
+
+.reviews__quote-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.reviews__quote-icon--reverse svg {
+    transform: scaleX(-1);
+    position: absolute;
+    bottom: 3%;
+    right: 13%;
+}
+
+.reviews__slider-nav {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.reviews__slider-arrow {
+    border: none;
+    background: transparent;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.arrow-left {
+    transform: scaleX(-1);
+    opacity: 0.5;
+}
+
+.reviews__avatars {
+    display: flex;
+    align-items: center;
+    gap: 27px;
+}
+
+.reviews__avatar-thumb {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    opacity: 0.5;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.reviews__avatar-thumb.active {
+    opacity: 1;
+    border: 1px solid #D23166;
+    width: 57.81px;
+    height: 57.81px;
+}
+
+.reviews__image {
+    flex: 1;
+    text-align: right;
+}
+
+.reviews__image img {
+    max-width: 100%;
+    display: block;
+}
+
+.order {
+    background-color: hwb(340 81% 5% / 0.3);
+}
+
+.order .container {
+    padding-top: 59px;
+    height: 648px;
+}
+
+.order--wrapp {
+    display: flex;
+    justify-content: center;
+    gap: 134px;
+}
+
+.order__mockup img {
+    width: 305px;
+    height: 627px;
+}
+
+.order__content {
+    padding-top: 31px;
+}
+
+.order__title,
+.contact-help__title {
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 44px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.order__desc {
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 1%;
+    color: #0F0101;
+    opacity: 0.7;
+    max-width: 600px;
+    margin-bottom: 29px;
+}
+
+.order__steps {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 39px;
+}
+
+.order__steps li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+
+.order__step-icon {
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.order__step-icon img {
+    object-fit: contain;
+}
+
+.order__apps {
+    display: flex;
+    align-items: center
+}
+
+.contact-help {
+    padding: 191px 0 149px;
+    background: #fff;
+    text-align: center;
+}
+
+.contact-help__title {
+    margin-bottom: 30px;
+    line-height: 1.4;
+}
+
+.contact-help__form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+    width: 637px;
+    margin: 0 auto;
+}
+
+.contact-help__input {
+    padding: 29px 0 29px 30px;
+    border: none;
+    font-size: 14px;
+    background: #f8f8f8;
+    border-radius: 5px;
+    outline: none;
+    width: 100%;
+}
+
+.contact-help__input::placeholder {
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    opacity: 0.6;
+}
+
+.contact-help__btn {
+    width: 134px;
+    height: 74px;
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+
+.footer {
+    background: #0d0d0d;
+}
+
+.footer {
+    color: #fff;
+    padding: 70px 0 107px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* .footer--wrapp {
+    display: grid;
+    align-items: end;
+    grid-template-columns: 207px 1fr 1fr 388px;
+    column-gap: 37px;
+} */
+
+.footer--wrapp {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.footer__brand {
+    margin-right: 37px;
+}
+
+.footer__logo {
+    margin-bottom: 20px;
+}
+
+.footer__desc {
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 140%;
+    letter-spacing: 1%;
+    color: #fff;
+    opacity: 0.7;
+    margin-bottom: 25px;
+    width: 207px;
+}
+
+.footer__label {
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #fff;
+    margin-bottom: 8px;
+}
+
+.footer__socials {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 7px;
+}
+
+.footer__nav,
+.footer__list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #fff;
+    opacity: 0.7;
+}
+
+.footer__nav {
+    padding-top: 100px;
+    margin-right: 132px;
+}
+
+.footer__list {
+    padding-top: 105px;
+}
+
+.footer__label-form {
+    padding-top: 100px;
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    margin-bottom: 13px;
+}
+
+.footer__form {
+    display: flex;
+    width: 338px;
+    height: 55px;
+    background: transparent;
+    margin-bottom: 15px;
+}
+
+.footer__input {
+    padding: 0 20px;
+    height: 55px;
+    background: transparent;
+    color: #fff;
+    font-size: 14px;
+    border: 2px solid #d643747f;
+    border-right: none;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+}
+
+.footer__btn {
+    height: 55px;
+    padding: 0 17px;
+    width: 125px;
+    background-color: #d64374;
+    color: #fff;
+    font-weight: 500;
+    font-size: 20px;
+    border: 2px solid #d64374;
+    border-radius: 0 5px 5px 0;
+}
+
+.footer__input::placeholder {
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #fff;
+    opacity: 0.6;
+}
+
+.footer__payments {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.footer__payments img {
+    height: fit-content;
+}
+
+.footer__column--wrapp {
+    margin-left: auto;
+}
